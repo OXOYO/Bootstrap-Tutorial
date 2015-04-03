@@ -12,6 +12,11 @@ ul {
 .row-block .col-block {
   background: #eeeeee;
 }
+.form-block {
+  /*.ht-300;*/
+  background: #EFEFEF;
+  margin-bottom: 20px;
+}
 .ht-50 {
   height: 50px;
 }
