@@ -1,19 +1,48 @@
 @charset "UTF-8";
 
+body { padding-top: 80px; }
+
 ul {
 	list-style: none;
 }
 
-.row-block { background: red; margin-bottom: 20px;
+.row-block { /*background: red;*/ margin-bottom: 20px;
 	&.lesson-block { text-align: center;}
 	.col-block {
 		background: #eeeeee;
+	}
+  	.btn-group {
+	  	margin-top: 5px;
+	  	margin-bottom: 5px;
 	}
 }
 
 .form-block { /*.ht-300;*/ background: #EFEFEF; margin-bottom: 20px;
 }
 
+
+pre {
+	margin: 15px auto;
+	font: 12px/20px 'courier new';
+	word-break: break-all;
+	word-wrap: break-word;
+	border: 1px solid #ddd;
+	border-left-width: 4px;
+	background: #fbfbfb url(/images/codecolorer_bg.gif) top;
+	padding: 10px 15px;
+}
+
+.breadcrumb > li + li:before {
+	color: #CCCCCC;
+	content: "/ ";
+	padding: 0 5px;
+}
+
+a.thumbnail{
+  	&:hover {
+	  	text-decoration: none;
+	}
+}
 
 .ht-n (@ht-n) {
 	height: @ht-n*1px;
@@ -64,4 +93,36 @@ ul {
 
 .hide {
   	display: none;
+}
+
+
+table.reference, table.tecspec {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.reference tr:nth-child(odd) {
+  background-color: #F6F4F0;
+}
+
+table.reference tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+table.reference th {
+  color: #ffffff;
+  background-color: #555555;
+  border: 1px solid #555555;
+  font-size: 12px;
+  padding: 3px;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.reference td {
+  border: 1px solid #d4d4d4;
+  padding: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  vertical-align: top;
 }

@@ -56,41 +56,68 @@
 		<div class="row row-block">
 			<ol class="breadcrumb">
 				<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Bootstrap 解析</a></li>
-				<li><a href="../lesson/lesson-1.html"> 第一讲：栅格</a></li>
-				<li class="active">左右布局</li>
+				<li><a href="../lesson/lesson-3.html"> 第三讲：按钮</a></li>
+				<li class="active">按钮按钮下拉菜单</li>
 			</ol>
 		</div>
-		<h2>左右布局</h2>
-		<div class="row row-block lesson-block">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-				<div class="col-block">
-					<h1>1</h1>
+		<h2>按钮下拉菜单</h2>
+		<div class="row row-block">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3>常规按钮下拉</h3>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						default 按钮 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="javascript: void (0);">项一</a></li>
+						<li><a href="javascript: void (0);">项二</a></li>
+						<li><a href="javascript: void (0);">项三</a></li>
+						<li><a href="javascript: void (0);">项四</a></li>
+						<li><a href="javascript: void (0);">项五</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-				<div class="col-block">
-					<h1>2</h1>
+		</div>
+		<div class="row row-block">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3>分割的按钮下拉菜单</h3>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default">default 按钮</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="javascript: void (0);">项一</a></li>
+						<li><a href="javascript: void (0);">项二</a></li>
+						<li><a href="javascript: void (0);">项三</a></li>
+						<li><a href="javascript: void (0);">项四</a></li>
+						<li><a href="javascript: void (0);">项五</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row row-block">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3>.dropup 按钮上拉菜单</h3>
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn-default">default 按钮</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="javascript: void (0);">项一</a></li>
+						<li><a href="javascript: void (0);">项二</a></li>
+						<li><a href="javascript: void (0);">项三</a></li>
+						<li><a href="javascript: void (0);">项四</a></li>
+						<li><a href="javascript: void (0);">项五</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<h2>Code</h2>
 		<pre>
 			<code>
-				&lt;div class="container"&gt;
-					&lt;h2&gt;左右布局&lt;/h2&gt;
-					&lt;div class="row row-block lesson-block"&gt;
-						&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"&gt;
-							&lt;div class="col-block"&gt;
-								&lt;h1&gt;1&lt;/h1&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-						&lt;div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"&gt;
-							&lt;div class="col-block"&gt;
-								&lt;h1&gt;2&lt;/h1&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
+
 			</code>
 		</pre>
 	</div>

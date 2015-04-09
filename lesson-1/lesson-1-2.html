@@ -7,7 +7,59 @@
 	<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse-4">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">Bootstrap 解析</a>
+		</div>
+		<div class="collapse navbar-collapse" id="my-navbar-collapse-4">
+			<ul class="nav navbar-nav">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown">组件 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../lesson/lesson-1.html">栅格系统</a></li>
+						<li><a href="../lesson/lesson-2.html">表单</a></li>
+						<li><a href="../lesson/lesson-3.html">按钮</a></li>
+						<li><a href="../lesson/lesson-4.html">导航</a></li>
+						<li><a href="../lesson/lesson-5.html">分页</a></li>
+						<li><a href="../lesson/lesson-6.html">标签</a></li>
+						<li><a href="../lesson/lesson-7.html">徽章</a></li>
+						<li><a href="../lesson/lesson-8.html">超大屏幕</a></li>
+						<li><a href="../lesson/lesson-9.html">页面标题</a></li>
+						<li><a href="../lesson/lesson-10.html">缩略图</a></li>
+					</ul>
+				</li>
+				<li><a href="#">DEMO</a></li>
+			</ul>
+			<div class="navbar-right">
+				<p class="navbar-text navbar-left"><a class="navbar-link" href="#">关于我们</a></p>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="关键字">
+														<span class="input-group-btn">
+															<button type="button" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+														</span>
+						</div>
+					</div>
+				</form>
+				<button type="button" class="btn btn-default navbar-btn">注册</button>
+				<button type="button" class="btn btn-default navbar-btn">登陆</button>
+			</div>
+		</div>
+	</div>
 	<div class="container">
+		<div class="row row-block">
+			<ol class="breadcrumb">
+				<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Bootstrap 解析</a></li>
+				<li><a href="../lesson/lesson-1.html"> 第一讲：栅格</a></li>
+				<li class="active">上下布局</li>
+			</ol>
+		</div>
 		<h2>上下布局</h2>
 		<div class="row row-block lesson-block">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -56,5 +108,7 @@
 			</code>
 		</pre>
 	</div>
+	<script src="../scripts/jquery.js"></script>
+	<script src="../scripts/bootstrap.js"></script>
 </body>
 </html>

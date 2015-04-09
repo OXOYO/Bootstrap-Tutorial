@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="UTF-8">
+	<title>Bootstrap Demo</title>
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse-4">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">Bootstrap 解析</a>
+		</div>
+		<div class="collapse navbar-collapse" id="my-navbar-collapse-4">
+			<ul class="nav navbar-nav">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown">组件 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../lesson/lesson-1.html">栅格系统</a></li>
+						<li><a href="../lesson/lesson-2.html">表单</a></li>
+						<li><a href="../lesson/lesson-3.html">按钮</a></li>
+						<li><a href="../lesson/lesson-4.html">导航</a></li>
+						<li><a href="../lesson/lesson-5.html">分页</a></li>
+						<li><a href="../lesson/lesson-6.html">标签</a></li>
+						<li><a href="../lesson/lesson-7.html">徽章</a></li>
+						<li><a href="../lesson/lesson-8.html">超大屏幕</a></li>
+						<li><a href="../lesson/lesson-9.html">页面标题</a></li>
+						<li><a href="../lesson/lesson-10.html">缩略图</a></li>
+					</ul>
+				</li>
+				<li><a href="#">DEMO</a></li>
+			</ul>
+			<div class="navbar-right">
+				<p class="navbar-text navbar-left"><a class="navbar-link" href="#">关于我们</a></p>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="关键字">
+													<span class="input-group-btn">
+														<button type="button" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+													</span>
+						</div>
+					</div>
+				</form>
+				<button type="button" class="btn btn-default navbar-btn">注册</button>
+				<button type="button" class="btn btn-default navbar-btn">登陆</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row row-block">
+			<ol class="breadcrumb">
+				<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Bootstrap 解析</a></li>
+				<li class="active">第十讲：缩略图</li>
+			</ol>
+		</div>
+		<div class="page-header">
+			<h1>Bootstrap 解析 第十讲：Thumbnail（缩略图）</h1>
+		</div>
+		<h3>Bootstrap 缩略图</h3>
+
+		<h3>Demo</h3>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-block">
+					<h3>.thumbnail 缩略图</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row row-block">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<a href="#" class="thumbnail">
+					<img src="../images/img-002.png" alt="缩略图">
+					<div class="caption">
+						<h4>小葫芦</h4>
+						<button type="button" class="btn btn-primary btn-xs">分享 <span class="badge">20</span></button>
+						<button type="button" class="btn btn-primary btn-xs">评论 <span class="badge">10</span></button>
+						<button type="button" class="btn btn-primary btn-xs">赞 <span class="badge">5</span></button>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<a href="#" class="thumbnail">
+					<img src="../images/img-002.png" alt="缩略图">
+					<div class="caption">
+						<h4>小葫芦</h4>
+						<button type="button" class="btn btn-primary btn-xs">分享 <span class="badge">20</span></button>
+						<button type="button" class="btn btn-primary btn-xs">评论 <span class="badge">10</span></button>
+						<button type="button" class="btn btn-primary btn-xs">赞 <span class="badge">5</span></button>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<a href="#" class="thumbnail">
+					<img src="../images/img-002.png" alt="缩略图">
+					<div class="caption">
+						<h4>小葫芦</h4>
+						<button type="button" class="btn btn-primary btn-xs">分享 <span class="badge">20</span></button>
+						<button type="button" class="btn btn-primary btn-xs">评论 <span class="badge">10</span></button>
+						<button type="button" class="btn btn-primary btn-xs">赞 <span class="badge">5</span></button>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<a href="#" class="thumbnail">
+					<img src="../images/img-002.png" alt="缩略图">
+					<div class="caption">
+						<h4>小葫芦</h4>
+						<button type="button" class="btn btn-primary btn-xs">分享 <span class="badge">20</span></button>
+						<button type="button" class="btn btn-primary btn-xs">评论 <span class="badge">10</span></button>
+						<button type="button" class="btn btn-primary btn-xs">赞 <span class="badge">5</span></button>
+					</div>
+				</a>
+			</div>
+		</div>
+		<h2>Code</h2>
+		<pre>
+			<code>
+				&lt;div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"&gt;
+					&lt;a href="#" class="thumbnail"&gt;
+						&lt;img src="../images/img-002.png" alt="缩略图"&gt;
+						&lt;div class="caption"&gt;
+							&lt;h4&gt;小葫芦&lt;/h4&gt;
+							&lt;button type="button" class="btn btn-primary btn-xs"&gt;分享 &lt;span class="badge"&gt;20&lt;/span&gt;&lt;/button&gt;
+							&lt;button type="button" class="btn btn-primary btn-xs"&gt;评论 &lt;span class="badge"&gt;10&lt;/span&gt;&lt;/button&gt;
+							&lt;button type="button" class="btn btn-primary btn-xs"&gt;赞 &lt;span class="badge"&gt;5&lt;/span&gt;&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/a&gt;
+				&lt;/div>
+			</code>
+		</pre>
+	</div>
+	<script src="../scripts/jquery.js"></script>
+	<script src="../scripts/bootstrap.js"></script>
+</body>
+</html>
