@@ -5,6 +5,7 @@
 	<title>Bootstrap Demo</title>
 	<link rel="stylesheet" href="../styles/bootstrap.min.css">
 	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/rainbow.css">
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -67,8 +68,9 @@
 		<h3>Demo</h3>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-block">
+				<div>
 					<h3>超大屏幕</h3>
+					<p class="bg-danger">注意：class <code>.jumbotron</code>可以被<code>.container</code>包含，也可以包含<code>.container</code>，只是表现的效果有区别。</p>
 					<div class="jumbotron">
 						<h1>欢迎登陆页面</h1>
 						<p>这是一个超大屏幕（Jumbotron）的实例</p>
@@ -79,8 +81,27 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;div class="container"&gt;
+	&lt;div class="jumbotron"&gt;
+		&lt;h1&gt;欢迎登陆页面&lt;/h1&gt;
+		&lt;p&gt;这是一个超大屏幕（Jumbotron）的实例&lt;/p&gt;
+		&lt;p&gt;
+			&lt;a class="btn btn-primary btn-lg" role="button" href="#"&gt;学习更多&lt;/a&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
 	</div>
 	<script src="../scripts/jquery.js"></script>
 	<script src="../scripts/bootstrap.js"></script>
+	<script src="../scripts/highlight.pack.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>

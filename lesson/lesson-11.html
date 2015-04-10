@@ -5,6 +5,7 @@
 	<title>Bootstrap Demo</title>
 	<link rel="stylesheet" href="../styles/bootstrap.min.css">
 	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/rainbow.css">
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -73,7 +74,7 @@
 		<h3>Demo</h3>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-block">
+				<div class="">
 					<h3>.alert 警告</h3>
 					<div class="alert alert-success">提示：success</div>
 					<div class="alert alert-info">提示：info</div>
@@ -84,8 +85,21 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-block">
+				<pre>
+					<code>
+&lt;div class="alert alert-success"&gt;提示：success&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;提示：info&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;提示：warning&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;提示：danger&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="">
 					<h3>.alert-dismissable 可取消的警告</h3>
+					<p class="bg-danger">点右侧 <code>&times;</code> 可以关闭</p>
 					<div class="alert alert-success alert-dismissable">提示：success
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 					</div>
@@ -103,7 +117,27 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-block">
+				<pre>
+					<code>
+&lt;div class="alert alert-success alert-dismissable"&gt;提示：success
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;提示：info
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;提示：warning
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;提示：danger
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="">
 					<h3>.alert-link 警告中的链接</h3>
 					<div class="alert alert-success alert-dismissable">提示：<a href="#" class="alert-link">success</a>
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -120,14 +154,30 @@
 				</div>
 			</div>
 		</div>
-		<h2>Code</h2>
-		<pre>
-			<code>
-
-			</code>
-		</pre>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;div class="alert alert-success alert-dismissable"&gt;提示：&lt;a href="#" class="alert-link"&gt;success&lt;/a&gt;
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;提示：&lt;a href="#" class="alert-link"&gt;info&lt;/a&gt;
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;提示：&lt;a href="#" class="alert-link"&gt;warning&lt;/a&gt;
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;提示：&lt;a href="#" class="alert-link"&gt;danger&lt;/a&gt;
+	&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&times;&lt;/button&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
 	</div>
 	<script src="../scripts/jquery.js"></script>
 	<script src="../scripts/bootstrap.js"></script>
+	<script src="../scripts/highlight.pack.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>

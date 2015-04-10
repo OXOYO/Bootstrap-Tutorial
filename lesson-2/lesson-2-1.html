@@ -5,6 +5,7 @@
 	<title>Bootstrap Demo</title>
 	<link rel="stylesheet" href="../styles/bootstrap.min.css">
 	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/rainbow.css">
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -61,9 +62,9 @@
 			</ol>
 		</div>
 		<h2>普通表单</h2>
-		<div class="row">
+		<div class="row row-block">
 			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
-				<form class="form-block">
+				<form>
 					<h3>竖排表单</h3>
 					<div class="form-group">
 						<label for="userEmail">邮箱</label>
@@ -81,8 +82,35 @@
 					<button type="submit" class="btn btn-default">提交</button>
 				</form>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;form&gt;
+	&lt;h3&gt;竖排表单&lt;/h3&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userEmail"&gt;邮箱&lt;/label&gt;
+		&lt;input type="email" class="form-control" id="userEmail" placeholder="邮箱"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userPassword"&gt;密码&lt;/label&gt;
+		&lt;input type="password" class="form-control" id="userPassword" placeholder="密码"&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox"&gt;
+		&lt;label for="rememberPassword"&gt;
+			&lt;input type="checkbox" id="rememberPassword"&gt; 记住密码
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button type="submit" class="btn btn-default"&gt;提交&lt;/button&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row row-block">
 			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				<form class="form-inline form-block">
+				<form class="form-inline">
 					<h3>内联表单</h3>
 					<div class="form-group">
 						<label for="userEmail">邮箱</label>
@@ -101,10 +129,34 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;form class="form-inline"&gt;
+	&lt;h3&gt;内联表单&lt;/h3&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userEmail"&gt;邮箱&lt;/label&gt;
+		&lt;input type="email" class="form-control" id="userEmail" placeholder="邮箱"&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userPassword"&gt;密码&lt;/label&gt;
+		&lt;input type="password" class="form-control" id="userPassword" placeholder="密码"&gt;
+	&lt;/div&gt;
+	&lt;div class="checkbox"&gt;
+		&lt;label for="rememberPassword"&gt;
+			&lt;input type="checkbox" id="rememberPassword"&gt; 记住密码
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;button type="submit" class="btn btn-default"&gt;提交&lt;/button&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row row-block">
 			<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
-				<form class="form-horizontal form-block">
+				<form class="form-horizontal">
 					<h3>水平表单</h3>
 					<div class="form-group">
 						<label for="userEmail" class="col-sm-2 control-label">邮箱</label>
@@ -136,8 +188,45 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;form class="form-horizontal"&gt;
+	&lt;h3&gt;水平表单&lt;/h3&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userEmail" class="col-sm-2 control-label"&gt;邮箱&lt;/label&gt;
+		&lt;div class="col-sm-10"&gt;
+			&lt;input type="email" class="form-control" id="userEmail" placeholder="邮箱"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;label for="userPassword" class="col-sm-2 control-label"&gt;密码&lt;/label&gt;
+		&lt;div class="col-sm-10"&gt;
+			&lt;input type="password" class="form-control" id="userPassword" placeholder="密码"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="rememberPassword"&gt;
+					&lt;input type="checkbox" id="rememberPassword"&gt; 记住密码
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;button type="submit" class="btn btn-default"&gt;提交&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row row-block">
 			<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
-				<form class="form-horizontal form-block">
+				<form class="form-horizontal">
 					<h3>额外元素</h3>
 					<div class="form-group">
 						<div class="input-group col-sm-offset-1 col-sm-10">
@@ -169,8 +258,45 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;form class="form-horizontal"&gt;
+	&lt;h3&gt;额外元素&lt;/h3&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="input-group col-sm-offset-1 col-sm-10"&gt;
+			&lt;span class="input-group-addon" id="userEmail2"&gt;邮箱&lt;/span&gt;
+			&lt;input type="email" class="form-control" id="userEmail" placeholder="请输入邮箱地址" aria-describedby="userEmail2"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="input-group col-sm-offset-1 col-sm-10"&gt;
+			&lt;span class="input-group-addon" id="userPassword2"&gt;密码&lt;/span&gt;
+			&lt;input type="password" class="form-control" id="userPassword" placeholder="请输入密码" aria-describedby="userPassword"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="rememberPassword"&gt;
+					&lt;input type="checkbox" id="rememberPassword"&gt; 记住密码
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;button type="submit" class="btn btn-default"&gt;提交&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row row-block">
 			<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
-				<form class="form-horizontal form-block">
+				<form class="form-horizontal">
 					<h3>选择框</h3>
 					<div class="form-group">
 						<div class="input-group col-sm-offset-1 col-sm-10">
@@ -242,14 +368,88 @@
 				</form>
 			</div>
 		</div>
-		<h2>Code</h2>
-		<pre>
-			<code>
-
-			</code>
-		</pre>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;form class="form-horizontal"&gt;
+	&lt;h3&gt;选择框&lt;/h3&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="input-group col-sm-offset-1 col-sm-10"&gt;
+			&lt;span class="input-group-addon" id="userEmail2"&gt;邮箱&lt;/span&gt;
+			&lt;input type="email" class="form-control" id="userEmail" placeholder="请输入邮箱地址" aria-describedby="userEmail"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="input-group col-sm-offset-1 col-sm-10"&gt;
+			&lt;span class="input-group-addon" id="userPassword"&gt;密码&lt;/span&gt;
+			&lt;input type="email" class="form-control" id="userPassword" placeholder="请输入密码" aria-describedby="userEmail"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label&gt;
+					&lt;input type="checkbox"&gt; 选项一
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label&gt;
+					&lt;input type="checkbox"&gt; 选项二
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label&gt;
+					&lt;input type="checkbox"&gt; 选项三
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;div class="radio"&gt;
+				&lt;label&gt;
+					&lt;input type="radio" name="radio" value="1"&gt;选项1
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="radio"&gt;
+				&lt;label&gt;
+					&lt;input type="radio" name="radio" value="2"&gt;选项2
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="radio"&gt;
+				&lt;label&gt;
+					&lt;input type="radio" name="radio" value="3"&gt;选项3
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="input-group col-sm-offset-1 col-sm-10"&gt;
+			&lt;span class="input-group-addon"&gt;类型&lt;/span&gt;
+			&lt;select class="form-control"&gt;
+				&lt;option&gt;1&lt;/option&gt;
+				&lt;option&gt;2&lt;/option&gt;
+				&lt;option&gt;3&lt;/option&gt;
+				&lt;option&gt;4&lt;/option&gt;
+				&lt;option&gt;5&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="form-group"&gt;
+		&lt;div class="col-sm-offset-2 col-sm-10"&gt;
+			&lt;button type="submit" class="btn btn-default"&gt;提交&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form>
+					</code>
+				</pre>
+			</div>
+		</div>
 	</div>
 	<script src="../scripts/jquery.js"></script>
 	<script src="../scripts/bootstrap.js"></script>
+	<script src="../scripts/highlight.pack.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>

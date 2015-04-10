@@ -57,25 +57,23 @@
 		<div class="row row-block">
 			<ol class="breadcrumb">
 				<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Bootstrap 解析</a></li>
-				<li class="active">第六讲：标签</li>
+				<li class="active">第十三讲：字体图标</li>
 			</ol>
 		</div>
 		<div class="page-header">
-			<h1>Bootstrap 解析 第六讲：Label（标签）</h1>
+			<h1>Bootstrap 解析 第十二讲：Glyphicon（字体图标）</h1>
 		</div>
-		<h3>Bootstrap 标签</h3>
-
+		<h3>Bootstrap 字体图标</h3>
+		<p>
+			图标类不能和其它组件直接联合使用。它们不能在同一个元素上与其他类共同存在。应该创建一个嵌套的 <code>&lt;span&gt;</code> 标签，并将图标类应用到这个 <code>&lt;span&gt;</code> 标签上。
+		</p>
+		<a class="btn btn-primary" href="http://v3.bootcss.com/components/#glyphicons" target="_blank">字体图标库</a>
 		<h3>Demo</h3>
 		<div class="row row-block">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="">
-					<h3>标签</h3>
-					<span class="label label-default">default 标签</span>
-					<span class="label label-primary">primary 标签</span>
-					<span class="label label-success">success 标签</span>
-					<span class="label label-info">info 标签</span>
-					<span class="label label-warning">warning 标签</span>
-					<span class="label label-danger">danger 标签</span>
+					<h3>.glyphicon .glyphicon-* 图标字体使用</h3>
+					<span class="glyphicon glyphicon-home"></span>
 				</div>
 			</div>
 		</div>
@@ -83,12 +81,36 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<pre>
 					<code>
-&lt;span class="label label-default"&gt;default 标签&lt;/span&gt;
-&lt;span class="label label-primary"&gt;primary 标签&lt;/span&gt;
-&lt;span class="label label-success"&gt;success 标签&lt;/span&gt;
-&lt;span class="label label-info"&gt;info 标签&lt;/span&gt;
-&lt;span class="label label-warning"&gt;warning 标签&lt;/span&gt;
-&lt;span class="label label-danger"&gt;danger 标签&lt;/span&gt;
+&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row row-block">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="">
+					<h3>.glyphicon .glyphicon-* 按钮中添加图标字体（<span class="bg-danger">注意：图标和文本之间需要添加一个空格</span>）</h3>
+					<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home"></span> default 按钮</button>
+					<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> primary 按钮</button>
+					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-home"></span> success 按钮</button>
+					<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-home"></span> info 按钮</button>
+					<button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-home"></span> warning 按钮</button>
+					<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-home"></span> danger 按钮</button>
+					<button type="button" class="btn btn-link"><span class="glyphicon glyphicon-home"></span> link 按钮</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<pre>
+					<code>
+&lt;button type="button" class="btn btn-default"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; default 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; primary 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; success 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; info 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; warning 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; danger 按钮&lt;/button&gt;
+&lt;button type="button" class="btn btn-link"&gt;&lt;span class="glyphicon glyphicon-home"&gt;&lt;/span&gt; link 按钮&lt;/button&gt;
 					</code>
 				</pre>
 			</div>
